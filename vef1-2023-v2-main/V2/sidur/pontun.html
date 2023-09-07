@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="is">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Pantaðu matinn heim eða bókaðu borð hjá okkur">
+    <meta name="og:title" content="Panta">
+    <meta name="og:description" content="Pantaðu matinn heim eða bókaðu borð hjá okkur">
+    <meta name="og:image" content="myndir/sharing.jpg">
+    <title>Panta</title>
+</head>
+
+<body>
+    <header>
+        <h1>Pantanir</h1>
+    </header>
+    <p><a href="#efni">Beint í efni</a></p>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Forsíða</a></li>
+            <li><a href="../sidur/um.html">Um veitingarstaðinn síða</a></li>
+            <li><a href="../sidur/matsedill.html">Matseðilssíða</a></li>
+            <li><strong>Pöntunarsíða</strong></li>
+        </ul>
+    </nav>
+    <main id="efni">
+        Pantaðu borð og mættu til okkar eða pantaðu mat sem við sendum þér eða þú sækir.
+        <form>
+            <fieldset>
+                <h3>Panta borð</h3>
+                <div><label>
+                        Hvenær viltu koma?
+                        <input type="datetime-local" id="datetime" required>
+                    </label></div>
+                <div><label>
+                        Hve mörg?
+                        <input type="text" id="amount" placeholder="1-10">
+                    </label></div>
+                <div>
+                    <label for="comment">Viltu taka eitthvað fram?</label>
+                    <textarea name="comment" id="comment" placeholder="Valkvæður texti"></textarea>
+                </div>
+            </fieldset>
+            <fieldset>
+                <h3>Panta mat</h3>
+                <div>
+                    <label>Veldu:</label>
+                    <input list="rettur1">
+                    <datalist id="rettur1">
+                        <option value="Lasagna">
+                        <option value="Sveppa Risotto">
+                        <option value="Ferskt pasta með pestó"></option>
+                        <option value="Falafel með hummus"></option>
+                        <option value="Súpa dagsins"></option>
+                        <option value="Kryddaðar sætkartöflur"></option>
+                        <option value="Hamborgari"></option>
+                        <option value="Pizza"></option>
+                    </datalist>
+                </div>
+                <div>
+                    <label>Veldu:</label>
+                    <input list="rettur2">
+                    <datalist id="rettur2">
+                        <option value="Lasagna">
+                        <option value="Sveppa Risotto">
+                        <option value="Ferskt pasta með pestó"></option>
+                        <option value="Falafel með hummus"></option>
+                        <option value="Súpa dagsins"></option>
+                        <option value="Kryddaðar sætkartöflur"></option>
+                        <option value="Hamborgari"></option>
+                        <option value="Pizza"></option>
+                    </datalist>
+                </div>
+                <div>
+                    <label>Veldu:</label>
+                    <input list="rettur3">
+                    <datalist id="rettur3">
+                        <option value="Lasagna">
+                        <option value="Sveppa Risotto">
+                        <option value="Ferskt pasta með pestó"></option>
+                        <option value="Falafel með hummus"></option>
+                        <option value="Súpa dagsins"></option>
+                        <option value="Kryddaðar sætkartöflur"></option>
+                        <option value="Hamborgari"></option>
+                        <option value="Pizza"></option>
+                    </datalist>
+                </div>
+                <div>
+                    <label>Veldu:</label>
+                    <input list="rettur4">
+                    <datalist id="rettur4">
+                        <option value="Lasagna">
+                        <option value="Sveppa Risotto">
+                        <option value="Ferskt pasta með pestó"></option>
+                        <option value="Falafel með hummus"></option>
+                        <option value="Súpa dagsins"></option>
+                        <option value="Kryddaðar sætkartöflur"></option>
+                        <option value="Hamborgari"></option>
+                        <option value="Pizza"></option>
+                    </datalist>
+                </div>
+                <div>
+                    <label>Veldu:</label>
+                    <input list="rettur5">
+                    <datalist id="rettur5">
+                        <option value="Lasagna">
+                        <option value="Sveppa Risotto">
+                        <option value="Ferskt pasta með pestó"></option>
+                        <option value="Falafel með hummus"></option>
+                        <option value="Súpa dagsins"></option>
+                        <option value="Kryddaðar sætkartöflur"></option>
+                        <option value="Hamborgari"></option>
+                        <option value="Pizza"></option>
+                    </datalist>
+                </div>
+                <div><label>
+                        <input name="takeaway" id="takeaway" type="checkbox">
+                        Heimsent?
+                    </label>
+                </div>
+                <div><label>
+                        Heimilisfang
+                        <input type="text" id="address" placeholder="Valkvætt ef ekki heimsent">
+                    </label></div>
+            </fieldset>
+            <fieldset>
+                <h3>Þínar upplýsingar</h3>
+                <div><label>
+                        Nafn:
+                        <input type="text" id="name" required>
+                    </label></div>
+                <div><label>
+                        Netfang:
+                        <input type="text" id="email" placeholder="nemi@hi.is" required>
+                    </label></div>
+                <div><label>
+                        Sími:
+                        <input type="text" id="phone" placeholder="000-0000">
+                    </label></div>
+
+            </fieldset>
+            <fieldset>
+                <h3>Samþykkja og panta</h3>
+                <div><label>
+                        <input name="accept" id="accept" type="checkbox">
+                        Ég samþykki skilmála Veitingastaðsins
+                    </label>
+                </div>
+                <div><button>Panta</button></div>
+            </fieldset>
+        </form>
+
+
+
+
+    </main>
+
+    <footer>
+        <h3>Opnunartími</h3>
+        <dl>
+            <dt>Mánudaga til fimmtudaga</dt>
+            <dd>09:00–18:00</dd>
+            <dt>Föstudaga</dt>
+            <dd>10:00–22:00</dd>
+            <dt>Laugardaga</dt>
+            <dd>11:00–22:00</dd>
+            <dt>Sunnudaga</dt>
+            <dd>Lokað</dd>
+        </dl>
+
+
+        <h1>Hér erum við</h1>
+
+        Veitingastaðurinn ehf.
+        Aðalgata 10
+        100 Reykjavík
+        Sími 333-4567
+        veitingastadur@example.org
+        <p><a href="../index.html">Aftur á forsíðu</a>
+        </p>
+    </footer>
+</body>
+
+</html>
